@@ -1,0 +1,21 @@
+$blue: #405F77;
+$gray: #58575A;
+$orange: #C78013;
+$link-hover-color: inherit;
+$link-hover-decoration: none;
+$book: 300;
+$light: 200;
+$bold: 700;
+$medium: 500;
+$semiBold: 600;
+$font-size-root: 17px;
+$font-family-base: "Whitney";
+$standart-heading-font: 'Gotham';
+$grid-gutter-width: 30px;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1120px
+) !default;

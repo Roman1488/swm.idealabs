@@ -1,0 +1,707 @@
+.page-content {
+  background-color: #fff;
+}
+.page-title{
+  font-size: 43px;
+  color: #3C7086;
+  letter-spacing: 1.3px;
+  margin: 25px 0 45px 0;
+  font-family: Gotham;
+  font-weight: 300;
+}
+.sidebar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.head-images {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    width: 33.33%;
+  }
+}
+.head-info {
+  background-color: $gray;
+}
+.head-desc {
+  color: #fff;
+  padding: 23px 40px 10px 25px;
+
+  p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+}
+.sub-title{
+  font-family: Gotham;
+  font-weight: $book;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.sub-text {
+  margin: 0;
+  line-height: 1.5;
+  font-family: Whitney;
+  font-size: 17px;
+  font-weight: 100;
+}
+.leadership {
+  margin-top: 33px;
+}
+.accordion{
+
+
+  margin-bottom: 15px;
+  &__title{
+    cursor: pointer;
+    transition: background .3s ease;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      transition: 0.5s;
+      background: url("img/accordion_arrow.png");
+      width: 22px;
+      height: 11px;
+      background-size: cover;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__title.active:before{
+    transform: rotate(0deg);
+  }
+
+  &__content{
+    display: none;
+    padding-top: 20px;
+  }
+}
+.showed{
+  display: block;
+}
+.person{
+  max-height: 130px;
+  display: flex;
+  margin-bottom: 30px;
+
+  &__info{
+    width: 100%;
+    padding: 15px;
+    background-color: #F3F3F3;
+  }
+
+  &__name{
+    display: inline-block;
+    font-size: 17px;
+    font-family: Whitney;
+    font-weight: $semiBold;
+    line-height: 1.5;
+    color: #405F77;
+    border-bottom: 0.5px solid #3C7086;
+  }
+  &__title{
+    font-size: 17px;
+    color: #444444;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  &__departament{
+    font-size: 17px;
+    line-height: 1.6;
+    color: #444444;
+  }
+  &__photo{
+    width: 130px;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+.sidebar_buttons__wrap {
+  width: 100%;
+}
+.button {
+  max-width: 208px;
+  padding: 6.5px 0;
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: Gotham;
+  font-size: 17px;
+  font-weight: $book;
+  transition: 0.4s;
+
+  &:last-child {
+    margin-bottom: 40px;
+  }
+
+  &--orange {
+    background-color: $orange;
+
+    &:hover {
+      color: #fff;
+      background-color: #8A530E;
+    }
+  }
+
+  &--gray {
+    background-color: $gray;
+    &:hover {
+      color: #fff;
+      background-color: #444346;
+    }
+
+  }
+}
+.circle-sidebar {
+
+  &__item {
+
+    &:nth-child(2n) .circle {
+      background-color: #506D86;
+    }
+
+    &:nth-child(2n+1) .circle {
+      background-color: #6384C7;
+    }
+    &:nth-child(1) .circle {
+      margin-top: 0;
+      background-color: #475D94;
+    }
+  }
+}
+.circle {
+  width: 154px;
+  height: 154px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #475D94;
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0 29px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+  &--big{
+    width: 175px;
+    height: 175px;
+    margin: auto;
+    .circle__title {
+      font-size: 17px;
+      line-height: 1.2;
+    }
+    .circle__number {
+      font-size: 70px;
+    }
+  }
+  &__number {
+    font-size: 64px;
+    line-height: 1.1;
+    font-family: Gotham;
+    font-weight: 100;
+    //margin-top: -15px;
+  }
+
+  &__title{
+    font-size: 15.47px;
+    font-family: Gotham;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+}
+.content-title {
+  font-family: Gotham;
+  font-size: 19px;
+  color: $blue;
+  font-weight: $bold;
+  /*margin-top: 30px;*/
+}
+.content-text {
+  font-size: 17px;
+  line-height: 1.8;
+  font-family: Whitney;
+  font-weight: $light;
+}
+.faculty-item {
+  margin-bottom: 30px;
+  &__info{
+    background-color: $blue;
+    color: #fff;
+    padding: 15px;
+    font-family: Whitney;
+  }
+  &__photo {
+    width: 100%;
+  }
+  &__name {
+    font-family: Whitney;
+    display: inline-block;
+    font-size: 17px;
+    border-bottom: 1px solid #fff;
+    font-weight: 600;
+  }
+  &__title {
+    margin: 0;
+    font-weight: $book;
+  }
+  &__departament {
+    margin: 0;
+    font-weight: $book;
+  }
+}
+.header-desc {
+  margin-bottom: 40px;
+}
+.person-card {
+  font-family: Whitney;
+  font-weight: $book;
+  color: #4C4C4E;
+  font-size: 17px;
+  display: flex;
+  margin-bottom: 30px;
+  min-height: 200px;
+
+  &__info {
+    padding: 20px 28px;
+    background-color: #F3F3F3;
+    width: 100%;
+    max-height: 200px;
+  }
+  &__img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  &__name {
+    font-family: Gotham;
+    font-size: 28px;
+    font-weight: $book;
+    color: $blue;
+    margin-bottom: 20px;
+  }
+  &__study{
+    margin-bottom: 15px;
+  }
+  &__work {
+    font-weight: $semiBold;
+    margin: 0;
+  }
+  .contact-info {
+    display: inline-block;
+    color: #4C4C4E;
+    span {
+      display: inline-block;
+      border-bottom: .5px solid #4C4C4E;
+    }
+    &:hover {
+      color: #4C4C4E;
+    }
+
+    .fa{
+      color: #4C4C4E;
+      margin-right: 10px;
+    }
+  }
+}
+.detail-separation {
+  background-color: $blue;
+  color: #fff;
+}
+.content-separation {
+  width: 100%;
+  background-color: $blue;
+  padding: 10px 15px;
+  margin: 0;
+  color: #fff;
+  font-size: 25px;
+  font-family: Gotham;
+  font-weight: $book;
+  margin-bottom: 15px;
+
+  &--no-margin {
+    margin-bottom: 0;
+  }
+}
+.content-wrap {
+  padding: 10px 20px 0px 15px;
+}
+.publications-wrap {
+  padding-top: 23px;
+  padding-bottom: 40px;
+}
+.publication-title{
+  font-size: 17px;
+  font-family: Whitney;
+  line-height: 1.5;
+  font-weight: $medium;
+  color: #000;
+  display: block;
+  a {
+    color: #000;
+  }
+}
+.publication-info {
+  font-size: 17px;
+  font-family: Whitney;
+  font-weight: $light;
+  color: #000;
+  font-style: italic;
+  display: block;
+  line-height: 1.5;
+}
+.page-header {
+  min-height: 530px;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: inset 0px -370px 50px -10px rgba(0, 0, 0, 0.5);
+
+  img {
+    max-width: 100%;
+  }
+  &__head-title {
+    background-color: rgba(19, 22, 29, 0.53);
+    padding: 17.5px 0;
+    h1 {
+      padding: 30px 0;
+    }
+  }
+
+  &__breadcrumbs {
+
+
+    .breadcrumb-item {
+      color: #fff;
+      font-family: Whitney;
+      font-size: 15px;
+      font-weight: 100;
+      text-decoration: underline;
+    }
+  }
+}
+.breadcrumbs {
+  margin: 20px 0;
+  color: $blue;
+
+  .breadcrumb-item, a {
+    font-family: Whitney;
+    font-size: 15px;
+    font-weight: 100;
+    text-decoration: underline;
+  }
+}
+.sep {
+  padding: 0 5px;
+}
+.head-bottom {
+  padding: 20px 0 20px 0;
+}
+.head-title {
+  font-size: 43px;
+  font-weight: $book;
+}
+.steps {
+  width: 250px;
+  margin: 0 auto;
+  &__item {
+    font-family: Gotham;
+    font-weight: $bold;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    background-color: #4B818D;
+    color: #fff;
+    margin-bottom: 25px;
+    padding: 10px 28px;
+    position: relative;
+    line-height: 1.2;
+
+    &:not(:last-child):after {
+      content: '';
+      position: absolute;
+      bottom: -22px;
+      left: calc(50% - 11px);
+      background: url("img/arrow_down.png");
+      width: 22px;
+      height: 22px;
+      background-size: cover;
+    }
+  }
+}
+.head-text{
+  line-height: 1.7;
+  font-size: 19px;
+  font-family: Whitney;
+  font-weight: $book;
+}
+.page-body {
+  margin-top: 35px;
+}
+.strong{
+  font-weight: $bold;
+}
+.tracks{
+  padding-bottom: 40px;
+}
+.track-row {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+}
+.track-col{
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+}
+.track-item {
+  display: flex;
+  flex-direction: column;
+  min-height: 255px;
+  background-color: #f3f3f3;
+  margin-top: 15px;
+}
+.track-title {
+  display: inline-block;
+  font-family: Gotham;
+  font-weight: $bold;
+  color: $blue;
+  font-size: 19px;
+  border-bottom: solid 0.5px $blue;
+  @media (max-width: 1199px) {
+    border-bottom: 1px solid $blue;
+  }
+
+  &:hover{
+    color: $blue;
+  }
+}
+.track-content{
+  padding: 15px 30px 0 20px;
+
+}
+.track-desc {
+  margin-top: 15px;
+  max-height: 75px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  p {
+    margin: 0;
+    font-family: Whitney;
+    font-weight: $book;
+    color: #4D4D4F;
+    font-size: 17px;
+    line-height: 1.5;
+    letter-spacing: -0.17px;
+  }
+}
+
+.tables table{
+  width: 100%;
+  border-collapse: separate;
+}
+.ps_summer-semesters {
+  margin-bottom: 30px;
+}
+.ps_summer-semesters table {
+  border-top: 15px solid #fff;
+}
+.tables table thead tr th{
+  background-color: #D3DEE6;
+  color: #3C7086;
+  font-size: 17px;
+  font-family: Gotham;
+  font-weight: $bold;
+  padding: 10px 15px;
+}
+.tables table tbody tr{
+  //padding: 5px 0;
+}
+.tables table tbody tr td{
+  border-top: 6px solid #fff;
+  background-color: #F3F3F3;
+  color: #538196;
+  font-size: 17px;
+  font-family: Whitney;
+  font-weight: 100;
+  padding: 10px 15px;
+  margin-top: 5px;
+  position: relative;
+}
+.tables table tbody tr td a {
+  color: #538196;
+  display: inline-block;
+  border-bottom: .34px solid #538196;
+
+  &:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    right: 10px;
+    line-height: 1.7;
+    text-decoration: none;
+  }
+}
+.page-head {
+  padding: 20px 0;
+  background: url("img/head_bg.png");
+  background-size: cover;
+  background-position: top right;
+  color: #fff;
+  font-family: Gotham;
+  display: flex;
+  align-items: center;
+  img {
+    max-width: 100%;
+  }
+  &__slogan {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: $bold;
+    font-size: 36px;
+  }
+}
+.accordion-wrapper {
+  margin-top: 33px;
+}
+.content-table table {
+  width: 100% !important;
+}
+.content-table table tbody tr td {
+  background-color: #F3F3F3;
+  color: #3C7086;
+  border: 5px solid #fff;
+  padding: 10px 18px;
+  font-size: 17px;
+  font-family: Gotham;
+  font-weight: $book;
+}
+.content-table table tbody tr td:nth-child(2n){
+  width: 30% !important;
+  text-align: right;
+}
+.content-table table tbody tr td:nth-child(2n+1){
+  width: 70% !important;
+}
+.content-table table tbody tr:last-child td {
+  background-color: #D3DEE6;
+  font-weight: $bold;
+}
+.about .the_content {
+  p {
+    line-height: 1.5;
+  }
+}
+.the_content {
+  &--small-lh p{
+    line-height: 1.5 !important;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    color: $blue;
+  }
+  p:last-child {
+    margin-bottom: 40px;
+  }
+  ul {
+    margin: 0;
+    padding-left: 30px;
+  }
+  p,
+  ul li{
+    font-size: 17px;
+    line-height: 1.8;
+    font-family: Whitney;
+    font-weight: $light;
+  }
+  ul li {
+    list-style-type: none;
+    position: relative;
+  }
+  li:before {
+    content: '';
+    color: $blue;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: $blue;
+    position: absolute;
+    top: 12px;
+    left: -20px;
+  }
+  h3:not(:first-child) {
+    margin-top: 25px;
+  }
+  h3 {
+    font-size: 19px;
+    color: $blue;
+    font-family: Gotham;
+    font-weight: $bold;
+  }
+}
+.curriculum .head-title {
+  margin: 15px 0 35px 0;
+}
+.curr-prog p {
+  margin-bottom: 35px;
+}
+.curriculum {
+
+  &__content {
+    p {
+      font-size: 19px;
+
+    }
+  }
+}
+.main-wrap {
+  padding-bottom: 15px;
+}
+.tables-row {
+  margin-right: -3px;
+  margin-left: -3px;
+}
+.tables-col {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+#panel-4-0-0-4 {
+  margin-bottom: 25px !important;
+}
+.admissions .accordion__content ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.admissions .accordion__content ul:last-child {
+  margin-bottom: 40px;
+}

@@ -1,0 +1,356 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 319px)
+and (max-width : 480px) {
+  /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  /* Styles */
+}
+/* iPhone 6 landscape */
+@media only screen and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2)
+{ }
+
+/* iPhone 6 portrait */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2)
+{ }
+
+/* iPhone 6 Plus landscape */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 3)
+{ }
+
+/* iPhone 6 Plus portrait */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 3)
+{ }
+
+/* iPhone 6 and 6 Plus */
+@media only screen
+and (max-device-width: 640px),
+only screen and (max-device-width: 667px),
+only screen and (max-width: 480px)
+{ }
+
+@media screen and (max-width: 992px){
+  .sidebar{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sidebar_buttons__wrap {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+  }
+  .button {
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .page-body {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 768px){
+
+  .head-images{
+    &__item{
+      width: 50%;
+    }
+  }
+  .tables table {
+    border-top: 15px solid #fff;
+  }
+}
+@media screen and (max-width: 576px){
+  .breadcrumbs {
+    margin-bottom: 10px;
+  }
+  .page-title {
+    margin: 10px 0 25px;
+  }
+  .sub-title {
+    line-height: 1.2;
+  }
+  .accordion:first-child, 
+  .leadership {
+    margin-top: 25px;
+  }
+  .person {
+    margin-bottom: 25px;
+    &.last {
+      margin-bottom: 0;
+    }
+  }
+  .circle--big {
+    width: 150px;
+    height: 150px;
+    .circle__title {
+      font-size: 15px;
+    }
+  }
+  .accordion__title {
+    padding-right: 40px;
+  }
+  .person{
+    max-height: inherit;
+    position: relative;
+  }
+  .person__info {
+    margin-left: 90px;
+    padding: 5px 15px;
+  }
+  .person__photo,
+  .person.person__vertical .person__photo {
+    width: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+  }
+  .person__name, 
+  .person__departament, 
+  .person__title {
+    font-size: 14px;
+  }
+  .about .sidebar-wrap{
+    display: none;
+  }
+  .person-card {
+
+    &__img {
+      display: none;
+    }
+    &__info {
+      max-height: none;
+    }
+  }
+  .sidebar_buttons__wrap{
+    z-index: 2;
+    background-color: #322F31;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+  }
+  .button {
+    width: 45%;
+    font-size: 15px;
+  }
+  .curriculum .head-title {
+    margin-bottom: 20px;
+  }
+  .head-bottom {
+    padding-bottom: 10px;
+  }
+  .page-body {
+    margin-top: 20px;
+  }
+  .tracks {
+    padding-bottom: 20px;
+  }
+  .track-item {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .content-wrap {
+    padding-top: 0;
+  }
+  .circle-sidebar {
+     > div {
+      width: 50%;
+      &:first-child {
+        .circle {
+          background-color: #475D94 !important;
+        }
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        .circle {
+          background-color: #506D86 !important;
+        }
+      }
+      &:nth-child(4) {
+        .circle {
+          background-color: #6384C7 !important;
+        }
+      }
+    }
+    .circle {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  .faculty-item__info {
+    padding: 10px;
+  }
+  .accordion-wrapper {
+    margin-top: 25px;
+  }
+  .head-desc {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .person-card__info {
+    padding: 15px;
+  }
+  .accordion__title:before {
+    top: 16px;
+  }
+  .page-content.faculty {
+    .header-desc {
+      margin-bottom: 20px;
+    }
+  }
+  .faculty-list {
+    margin-bottom: 30px;
+  }
+}
+@media only screen
+and (min-width : 544px)
+and (max-width : 768px) {
+  .person {
+    max-height: 150px;
+  }
+  .person-card {
+
+    &__name{
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+@media only screen
+and (max-width : 400px)  {
+  .page-head__title {
+    font-size: 2rem;
+  }
+  .accordion__title,
+  .content-separation {
+    font-size: 20px;
+  }
+  .circle--big,
+  .circle {
+    width: 140px;
+    height: 140px;
+  }
+  .circle--big .circle__number,
+  .circle .circle__number {
+    font-size: 55px;
+    line-height: 55px;
+    margin-top: 2px;
+  }
+}
+@media (max-width: 350px) {
+  .circle--big,
+  .circle {
+    width: 130px;
+    height: 130px;
+  }
+  .circle--big .circle__number,
+  .circle .circle__number {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+@media only screen
+and (min-width : 1200px)  {
+  .home .container {
+    width: 1120px + $grid-gutter-width !important;
+  }
+  .container {
+    width: 1110px + $grid-gutter-width !important; 
+  }
+}
+@media only screen
+and (min-width : 992px)
+and (max-width : 1200px)  {
+  .steps {
+    margin: 0;
+    margin-left: 60px;
+  }
+  .person {
+    max-height: 150px;
+  }
+  .slider-home-widget .slider-nav {
+    margin-bottom: 0;
+  }
+}
+@media only screen
+and (max-width : 480px)  {
+  .slider-home-widget .slider-nav {
+    margin-left: 20px;
+  }
+}

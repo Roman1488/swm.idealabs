@@ -1,0 +1,35 @@
+.partner-icon-item   img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+.partner-img {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partner-icon-item {
+    text-align: center;
+    margin-bottom: 90px;
+}
+.partner-icon-item .widget-title {
+    font-size: 18px;
+    color: #333333;
+    font-weight: 600;
+}
+.partner-icon-item .widget-subtitle {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.partner-icon-widget.col-count-4 .row > div:nth-child(3n+1) {
+    clear: both;
+}
+.partner-icon-widget.col-count-3 .row > div:nth-child(4n+1) {
+    clear: both;
+}
+.partner-icon-widget.col-count-6 .row > div:nth-child(2n+1) {
+    clear: both;
+}
